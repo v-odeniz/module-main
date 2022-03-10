@@ -4,10 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-/v-pack
+/src/react-module
 # testing
 /coverage
-
 # production
 /build
 

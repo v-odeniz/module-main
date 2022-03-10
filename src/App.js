@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import useValvenToggle from '../v-pack/react-module/src/hooks/valven-toggle'
+import useValvenToggle from './react-module/src/hooks/valven-toggle'
 
 function App() {
+  const [isOn,setIsOn] = useValvenToggle();
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={()=> setIsOn(isOn => !isOn)}>Is Click {`${isOn}`}</button>
       </header>
     </div>
   );
